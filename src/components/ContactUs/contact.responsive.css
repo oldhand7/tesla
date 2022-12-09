@@ -1,0 +1,10 @@
+@media screen and (max-width: 800px)
+{
+    .Contact_contact_box{
+        width: 0% !important;
+    }
+    .Contact_map{
+        width: 100% !important;
+    }
+    
+}

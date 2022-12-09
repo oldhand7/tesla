@@ -1,0 +1,7 @@
+.container{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  text-align: center;
+  scroll-behavior: smooth;
+}

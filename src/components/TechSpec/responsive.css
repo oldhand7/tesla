@@ -1,0 +1,101 @@
+@media screen and (max-width: 1400px) {
+  .TechSpec_aero .TechSpec_text_content, .TechSpec_interio .TechSpec_text_content, .TechSpec_topview .TechSpec_text_content {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .TechSpec_aero .TechSpec_text_content{
+    margin-left: auto;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .TechSpec_aero .TechSpec_text_content {
+      bottom: -25%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .TechSpec_aero .TechSpec_image {
+      top: 100px
+    }
+
+    .TechSpec_specs ul {
+      width: 90% !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .TechSpec_aero .TechSpec_text_content *, .TechSpec_interio .TechSpec_text_content *, .TechSpec_topview .TechSpec_text_content * {
+      font-size: 14px !important;
+    }
+
+    .TechSpec_aero {
+      margin-top: -150px !important;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .TechSpec_hero .TechSpec_stats {
+    width: 90% !important;
+    top: 78% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+
+  .TechSpec_aero .TechSpec_text_content {
+    bottom: -58%;
+  }
+
+  .TechSpec_hero .TechSpec_stats * {
+    font-size: 16px !important;
+  }
+
+  .TechSpec_hero .TechSpec_stats {
+    font-size: 20px !important;
+  }
+
+  .TechSpec_hero .TechSpec_text_content p {
+    top: 76% !important;
+  }
+
+  .TechSpec_video_mask video {
+    height: 200px !important;
+    object-fit: cover !important;
+  }
+
+  .TechSpec_video_mask {
+    width: 100% !important;
+  }
+
+  .TechSpec_aero .TechSpec_text_content h1,
+  .TechSpec_interio .TechSpec_text_content h1, .TechSpec_topview .TechSpec_text_content h1 {
+    width: 100% !important;
+
+  }
+
+  .TechSpec_aero .TechSpec_text_content p, .TechSpec_interio .TechSpec_text_content p, .TechSpec_topview .TechSpec_text_content p {
+    width: 100% !important;
+  }
+
+  .TechSpec_topview .TechSpec_text_content {
+    bottom: -5%;
+  }
+
+  .Navbottom_nav_bottom ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  .TechSpec_tds_text_caption{
+    width: 100%;
+  }
+}
