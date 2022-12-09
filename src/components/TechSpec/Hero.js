@@ -8,8 +8,8 @@ const Hero = () => {
         <div className={style.hero}>
             <div className={style.image_bg}>
                 <picture>
-                    <source srcset="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero-mobile@2.jpg"  media='(min-width: 420px) and (max-width: 999px)' />
-                    <source srcset="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero@2.jpg" media='(min-width: 1000px)'/>
+                    <source srcSet="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero-mobile@2.jpg"  media='(min-width: 420px) and (max-width: 999px)' />
+                    <source srcSet="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero@2.jpg" media='(min-width: 1000px)'/>
                     <img src="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero-mobile@2.jpg" alt="hero-mobile" style={{ height: "100%", width: "100%", objectFit: 'cover' }} />
                     
                 </picture>
