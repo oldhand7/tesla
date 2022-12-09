@@ -3,12 +3,10 @@ import style from './TechSpec.module.scss'
 
 
 const Topview = (props) => {
-    console.log(props.overlap);
     return (
         <div className={style.topview}>
             <div className={style.image}>
                 <img src={props.overlap} />
-
             </div>
             <div className={style.text_content}>
                 <h1>Glass Roof</h1>

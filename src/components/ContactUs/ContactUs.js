@@ -21,14 +21,14 @@ const ContactUs = () => {
   }, [])
   const listenTosize = () => {
     const windwidth = window.innerWidth;
-    console.log(windwidth);
+    // console.log(windwidth);
     if (windwidth < 500) {
       setIsmobile(true)
-      console.log(ismobile)
+      // console.log(ismobile)
     }
     else {
       setIsmobile(false)
-      console.log(ismobile)
+      // console.log(ismobile)
 
     }
 

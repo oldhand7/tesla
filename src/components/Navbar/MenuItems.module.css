@@ -1,15 +1,35 @@
 .menu {
   display: flex;
   list-style: none;
-  margin-right: 15px;
+  margin-right: 1.6%;
+}
+
+.menu.right__menu .open__menu{
+  display: none
+}
+
+.menu.middle__menu {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.menu.middle__menu a {
+  color: #171a20;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.menu.middle__menu a:hover {
+  background-color: rgba(0,0,0,.07);
+  color: #171a20;
 }
 
 @media (max-width : 1198px) {
   .menu.middle__menu {
     display: none;
-    padding-right: 9px;
-    padding-top: 5px;
   }
+  
   .menu.right__menu .options{
     display: none;
   }
@@ -18,6 +38,7 @@
     background-color:hsla(0,0%,0%,.05);
   }
 }
+
 a{
   margin: 0px 20px;
 }
@@ -30,7 +51,6 @@ a{
 .menu li:hover {
   background-color: rgba(0,0,0,.07);
   background-color:hsla(0,0%,0%,.05);
-
 }
 
 .menu li a {

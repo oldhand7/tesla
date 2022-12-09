@@ -12,8 +12,7 @@ const SideBar = props => {
         {windowSize < 1198 &&
           props.products &&
           props.products.map((el, i) => {
-            // return <li key={i}><a href={i==0?'/':`/${el}`}>{el}</a></li>
-            return <Link  to={i==0?'/':`/${el}`}>{el}</Link>
+            return <Link  to={i==0?'/':`/${el}`} key={i}>{el}</Link>
           })
         }
         {windowSize < 1198 &&

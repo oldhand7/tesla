@@ -54,7 +54,7 @@
   position: relative;
   display: block;
   top: 0;
-  width: 33%;
+  width: 40%;
   height: auto;
   margin: auto;
 }
@@ -120,12 +120,10 @@
   z-index: 10;
   display: flex;
   justify-content: center;
-
 }
 
 .aero .image {
   position: relative;
-  top: 100px;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -135,14 +133,14 @@
 }
 
 .aero img {
-  width: 85%;
+  width: 100%;
   height: auto;
 }
 
 .aero .text_content {
   position: absolute;
   bottom: 14%;
-  width: 51%;
+  width: 60%;
   color: #fff;
   text-align: left;
   display: flex;
@@ -158,7 +156,6 @@
   font-weight: normal;
   color: #fff;
   color: var(--tds-color--white);
-  padding-left: 2%;
 }
 
 .aero .text_content p {
@@ -168,7 +165,6 @@
   font-weight: normal;
   color: #fff;
   box-sizing: border-box;
-  padding-left: 45px;
   line-height: 24px;
   margin-top: 0;
   margin-bottom: 0;
@@ -218,7 +214,7 @@
   position: absolute;
   margin-top: -60px;
   text-align: center;
-  top: 80%;
+  top: 81%;
   left: 50%;
   padding: 0;
   font-size: 16px;
@@ -233,10 +229,10 @@
 .hero .stats {
   position: absolute;
   height: fit-content;
-  width: 40%;
-  top: 83%;
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 50%;
+  top: 84%;
+  margin: auto;
+  position: relative;
   padding-left: 0;
 
 
@@ -376,34 +372,34 @@
 }
 
 .interio .image img {
-  width: 64%;
+  width: 80%;
   height: auto;
 }
 
 .interio .text_content {
   position: relative;
-  bottom: 5%;
-  width: 64%;
+  width: 80%;
   color: #fff;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.2%;
   display: flex;
+  align-items: flex-end;
 }
 
 .interio .text_content h1 {
   width: auto;
-  font-size: 20px;
+  font-size: 24px;
   margin-right: 42px;
   padding-top: 0;
   position: relative;
   float: left;
   font-family: 'Gotham Medium', 'system', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   color: #fff;
   color: var(--tds-color--white);
-
+  margin-bottom: 0;
 }
 
 .interio .text_content p {
@@ -416,6 +412,7 @@
   float: left;
   width: auto;
   line-height: 24px;
+  margin-bottom: 0;
 }
 
 .topview {
@@ -427,21 +424,20 @@
 
 .topview .image {
   position: relative;
-  top: 0;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .topview img {
-  width: 100%;
+  width: 150vw;
   height: auto;
 }
 
 .topview .text_content {
   position: absolute;
   bottom: 7%;
-  width: 22%;
+  width: 30%;
   color: #fff;
   text-align: left;
   margin-left: 15%;
@@ -524,8 +520,7 @@
 
 .bottom_cta {
   position: relative;
-  margin-top: 54px;
-  top: 0;
+  margin-top: 20px;
   margin-bottom: 0;
   display: flex;
   flex-wrap: nowrap;
@@ -543,17 +538,22 @@
   box-sizing: border-box;
   border: 2.5px solid #fff;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 13px;
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
   padding-top: 12px;
   font-family: 'Gotham Medium', 'system', sans-serif;
   font-weight: normal;
   transition: background-color .5s, opacity .5s;
   cursor: pointer;
   pointer-events: auto;
+  font-weight: bold;
+}
+
+.g_order_button:hover {
+  background-color: #fff;
+  color: #5c5e62;
 }
 
 .lastP {
@@ -590,106 +590,96 @@
 @media screen and (max-width: 1500px) {
   .hero .stats {
     width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
   }
 }
+
 @media screen and (max-width: 780px) {
   .hero .stats {
-    top:75%;
+    top: 75%;
   }
 
-  .hero .text_content p{
+  .hero .text_content p {
     top: 72%;
   }
 }
 
 @media screen and (max-width: 1400px) {
 
-
-  .aero .text_content,
-  .interio .text_content,
-  .topview .text_content {
+  .aero .text_content {
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-
-  .interio .text_content{
-    bottom: -10%;
+  .interio .text_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -10%;
   }
 
   .aero .text_content {
-    margin-left: auto;
     bottom: -4%;
   }
+
   .specs ul {
     width: 90% !important;
   }
 
   .aero .text_content h1 {
     width: 64% !important;
-    left: -10px;
     font-size: 23px !important;
+  }
+
+  .aero .text_content p {
+    width: 64% !important;
+    text-align: start;
+  }
+
+  .topview {
+    display: flex;
+    justify-content: center;
   }
 
   .topview .text_content {
     position: absolute;
-    bottom: -37%;
+    bottom: -2%;
     margin-left: 0;
+    width: 70%;
   }
 
   .topview .text_content h1 {
     width: 64% !important;
-    left: 5px;
     font-size: 23px !important;
     text-align: left;
   }
-
-
-  // .topview img {
-  //   width: 170vw;
-  //   height: auto;
-  // }
-
-  .topview .text_content {
-    bottom: -2%;
+  .topview .text_content p{
+    width: 64% !important;
   }
 
-  .interio{
-    margin-top: 22%;
+  .interio {
+    margin-top: 10%;
   }
 }
 
 
-  @media screen and (max-width: 800px) {
-    .aero .image {
-      top: 30px;
-    }
-
-    .specs ul {
-      width: 90% !important;
-    }
-
-    .aero .text_content {
-      bottom: -30%;
-    }
-
-    
+@media screen and (max-width: 800px) {
+  .aero {
+    flex-direction: column;
+  }
+  .aero .image {
+    margin-top: 30px;
   }
 
-  @media screen and (max-width: 600px) {
-
-
-    .aero {
-      margin-top: -150px !important;
-    }
+  .specs ul {
+    width: 90% !important;
   }
 
-
-
+  .aero .text_content {
+    position: relative;
+  }
+}
 
 @media screen and (max-width: 500px) {
 
@@ -700,8 +690,6 @@
   }
 
   .hero .stats {
-    margin-left: 5% !important;
-    margin-right: 5% !important;
     top: 70% !important;
     width: 90% !important;
   }
@@ -711,18 +699,19 @@
     height: 120vw;
   }
 
-  .aero .text_content p,
-  .interio .text_content p,
+  .aero .text_content p,  
   .topview .text_content p {
-    bottom: -57%;
-    left: 0px;
+    margin-left: 0px;
     font-size: 15px;
     padding-left: 0;
-    width: 71%;
-    text-align: left;
+    width: 71% !important;
   }
 
-
+  .interio .text_content p {
+    font-size: 15px;
+    width: 71% !important;
+    margin-top: 5%;
+  }
 
   .hero .text_content p {
     top: 70% !important;
@@ -737,19 +726,17 @@
   }
 
   .aero .text_content h1 {
-    width: 64% !important;
-    left: -10px;
+    width: 71% !important;
     font-size: 23px !important;
+  }
+
+  .interio .text_content {
+    margin-top: 5%;
   }
 
   .interio .text_content h1 {
-    width: 64% !important;
-    left: 5px;
+    width: 71% !important;
     font-size: 23px !important;
-  }
-
-  .interio {
-    margin-top: 243px !important;
   }
 
   .interio img {
@@ -757,33 +744,22 @@
     height: 70vw !important;
   }
 
-  .interio .text_content {
-    bottom: -22px !important;
+  .topview {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
   .topview .text_content {
-    position: absolute;
-    bottom: -37%;
+    position: relative !important;
     margin-left: 0;
+    width: 90% !important;
   }
 
-  .topview .text_content h1 {
-    width: 64% !important;
-    left: 5px;
+  .topview .text_content h1, topview .text_content p {
+    width: 100% !important;
     font-size: 23px !important;
     text-align: left;
   }
-
-
-  .topview img {
-    width: 170vw;
-    height: auto;
-  }
-
-  .topview .text_content {
-    bottom: -36%;
-  }
-
 
   .tds_text_caption {
     width: 100%;
@@ -794,7 +770,7 @@
   }
 
   .unveil {
-    margin-top: 43vw !important;
+    margin-top: -20vw !important;
 
   }
 
@@ -818,7 +794,7 @@
   }
 
   .lastP {
-    padding: 110px 0;
+    padding: 50px 0;
     margin-bottom: 0;
   }
 
@@ -827,59 +803,37 @@
   }
 }
 
-@media screen and (max-width: 414px){
-  .hero .text_content p{
+@media screen and (max-width: 414px) {
+  .hero .text_content p {
     font-size: 13px !important;
   }
 
-  .hero .top,.hero .top div {
+  .hero .top,
+  .hero .top div {
     font-size: 20px !important;
   }
 
-  .hero div.info{
+  .hero div.info {
     font-size: 12px !important;
   }
 }
 
-@media screen and (max-width: 356px){
-  .aero .text_content{
-    bottom:-73% !important;
-  }
-
-  
-  .top_view{
+@media screen and (max-width: 356px) {
+  .top_view {
     margin-top: 15%;
   }
-  .speedometer{
+
+  .speedometer {
     height: 20px !important;
   }
-  
-  .speedometer_circle{
+
+  .speedometer_circle {
     bottom: 0px;
     left: 1px;
   }
 
-  .speedometer_needle
-  {
+  .speedometer_needle {
     bottom: 0px;
     left: 13.5px;
   }
 }
-
-// @media screen and (width:280px){
-
-//   .speedometer{
-//     height: 20px !important;
-//   }
-  
-//   .speedometer_circle{
-//     bottom: 0px;
-//     left: 1px;
-//   }
-
-//   .speedometer_needle
-//   {
-//     bottom: 0px;
-//     left: 13.5px;
-//   }
-// }

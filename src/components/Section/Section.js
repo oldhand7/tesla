@@ -17,7 +17,7 @@ const Section = props => {
   }, [])
   const listenTosize = () => {
     const windwidth = window.innerWidth;
-    console.log(windwidth);
+    // console.log(windwidth);
     if (windwidth < 500) {
       setIsmobile(true)
     }
