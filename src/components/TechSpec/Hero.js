@@ -8,9 +8,9 @@ const Hero = () => {
         <div className={style.hero}>
             <div className={style.image_bg}>
                 <picture>
-                    <source srcSet="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero-mobile@2.jpg" media='(min-width: 420px) and (max-width: 999px)' />
-                    <source srcSet="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero@2.jpg" media='(min-width: 1000px)' />
-                    <img src="https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/hero-mobile@2.jpg" alt="hero-mobile" style={{ height: "100%", width: "100%", objectFit: 'cover' }} />
+                    <source srcSet="images/hero-mobile@2.jpg" media='(min-width: 420px) and (max-width: 999px)' />
+                    <source srcSet="images/hero@2.jpg" media='(min-width: 1000px)' />
+                    <img src="images/hero-mobile@2.jpg" alt="hero-mobile" style={{ height: "100%", width: "100%", objectFit: 'cover' }} />
                 </picture>
             </div>
             <div className={style.text_content}>

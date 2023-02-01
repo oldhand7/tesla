@@ -9,7 +9,7 @@ const VideoAds = () => {
                     autoPlay={true}
                     loop={true}
                     muted="" playsInline="">
-                    <source src='https://www.tesla.com/ns_videos/roadster_videos/roadster-loop-imperial.mp4?20180329'
+                    <source src='images/roadster.mp4'
                     type='video/mp4' />
                 </video>
             </div>

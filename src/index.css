@@ -2,7 +2,27 @@
   --transition: .5s;
   --black-color: #171a20;
 }
-@import url('https://fonts.cdnfonts.com/css/gotham-ssm');
+
+@font-face {
+  font-family: gotham ssm;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gotham SSm'), url(../public/fonts/GothamSSmLight.woff) format('woff')
+}
+
+@font-face {
+  font-family: gotham ssm;
+  font-style: normal;
+  font-weight: 325;
+  src: local('Gotham SSm'), url(../public/fonts/GothamSSmBook.woff) format('woff')
+}
+
+@font-face {
+  font-family: gotham ssm;
+  font-style: normal;
+  font-weight: 350;
+  src: local('Gotham SSm'), url(../public/fonts/GothamSSmMedium.woff) format('woff')
+}
 
 * {
   -webkit-box-sizing: border-box;

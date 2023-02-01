@@ -5,7 +5,7 @@ const Aero = () => {
   return (
     <div className={style.aero}>
         <div className={style.image} >
-          <img src='https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/roadster/back-mobile@2.jpg'/>
+          <img src='images/back.jpg'/>
         </div>
         <div className={style.text_content}>
             <h1>Designed for Performance and Aero Efficiency</h1>
